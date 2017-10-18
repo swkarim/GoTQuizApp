@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.gotquizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gotsplash" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/header"
+                style="@style/Header"
+                android:text="@string/header"></TextView>
+
+            <View style="@style/Horizontal_Divider" />
+
+            <TextView
+                android:id="@+id/question_one"
+                style="@style/Questions"
+                android:text="@string/question_one"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/lannister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lannister" />
+
+                <CheckBox
+                    android:id="@+id/stark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stark" />
+
+                <CheckBox
+                    android:id="@+id/gryffindor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gryffindor" />
+
+            </LinearLayout>
+
+            <View style="@style/Horizontal_Divider" />
+
+            <TextView
+                android:id="@+id/question_two"
+                style="@style/Questions"
+                android:text="@string/question_two"></TextView>
+
+            <EditText
+                android:id="@+id/input_question_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <View style="@style/Horizontal_Divider" />
+
+            <TextView
+                android:id="@+id/question_three"
+                style="@style/Questions"
+                android:text="@string/question_three" />
+
+            <RadioGroup style="@style/Radio_Group_Style">
+
+                <RadioButton
+                    android:id="@+id/grey_wind"
+                    style="@style/Radio_Button_Style"
+                    android:text="Grey Wind" />
+
+                <RadioButton
+                    style="@style/Radio_Button_Style"
+                    android:text="Nimeria" />
+
+                <RadioButton
+                    style="@style/Radio_Button_Style"
+                    android:text="Summer" />
+
+            </RadioGroup>
+
+            <View style="@style/Horizontal_Divider" />
+
+            <TextView
+                android:id="@+id/question_four"
+                style="@style/Questions"
+                android:text="@string/question_four" />
+
+            <RadioGroup style="@style/Radio_Group_Style">
+
+                <RadioButton
+                    android:id="@+id/three_dragons"
+                    style="@style/Radio_Button_Style"
+                    android:text="Three" />
+
+                <RadioButton
+                    style="@style/Radio_Button_Style"
+                    android:text="One" />
+
+                <RadioButton
+                    style="@style/Radio_Button_Style"
+                    android:text="Six" />
+
+            </RadioGroup>
+
+            <View style="@style/Horizontal_Divider" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="checkAnswers"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

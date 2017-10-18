@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GoTQuizApp</string>
+    <string name="header">Game of Thrones</string>
+    <string name="question_one">Select the names of the Great Houses.</string>
+    <string name="question_two">Who killed a white walker?</string>
+    <string name="question_three">Which dire-wolf belonged to Robb?</string>
+    <string name="question_four">How many dragons does Daenerys own?</string>
+
+</resources>
